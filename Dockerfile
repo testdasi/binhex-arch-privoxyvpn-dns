@@ -12,7 +12,7 @@ ADD stubby /tmp
 RUN cd /tmp \
     && mkdir -p /config/stubby \
     && cp -n ./stubby.yml /config/stubby/ \
-    && rm -f ./stubby.yml
+    && echo 'rm -f ./stubby.yml'
 
 EXPOSE 53/tcp
 EXPOSE 53/udp
