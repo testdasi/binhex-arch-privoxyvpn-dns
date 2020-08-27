@@ -10,8 +10,8 @@ RUN mkdir -p /etc/stubby \
 # install stubby config
 ADD stubby /tmp
 RUN cd /tmp \
-    && mkdir -p /etc/stubby \
-    && cp -n ./stubby.yml /etc/stubby/ \
+    && mkdir -p /config/stubby \
+    && cp -n ./stubby.yml /config/stubby/ \
     && rm -f ./stubby.yml
 
 EXPOSE 53/tcp
