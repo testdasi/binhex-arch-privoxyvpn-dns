@@ -1,4 +1,4 @@
 #!/bin/bash
 
-stubby -g -C /config/stubby.yml
+stubby -g -C /config/stubby/stubby.yml
 /bin/bash /usr/local/bin/init.sh
