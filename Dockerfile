@@ -1,4 +1,4 @@
-FROM amd64/debian:buster
+FROM binhex/arch-privoxyvpn:latest
 
 RUN pacman -Syu \
     && pacman -S --noconfirm stubby
