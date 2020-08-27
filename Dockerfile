@@ -9,11 +9,8 @@ RUN mkdir -p /etc/stubby \
 
 # install stubby config
 ADD stubby /tmp
-RUN cd /tmp \
-    && mkdir -p /config/stubby \
-    && cp -n ./stubby.yml /config/stubby/ \
-    && echo 'rm -f ./stubby.yml'
 
+#Expose port
 EXPOSE 53/tcp
 EXPOSE 53/udp
 
