@@ -17,5 +17,5 @@ RUN cd /tmp \
 EXPOSE 53/tcp
 EXPOSE 53/udp
 
-# run stubby in background
-ENTRYPOINT stubby
+# run init script
+CMD ["/bin/bash", "/tmp/startup.sh"]
