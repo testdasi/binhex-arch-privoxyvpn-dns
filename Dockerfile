@@ -18,4 +18,4 @@ EXPOSE 53/tcp
 EXPOSE 53/udp
 
 # run stubby in background
-CMD stubby -g
+ENTRYPOINT stubby
